@@ -7,10 +7,6 @@ export default class Data {
   };
 
   async fetchData(howMany) {
-    console.log(123);
-
-    console.log(this.#users);
-
     const res = await fetch(`${URL}${howMany}`);
     const allData = await res.json();
 
@@ -21,8 +17,6 @@ export default class Data {
     }
 
     this.#users.newUsers.push(...results);
-
-    console.log(this.#users);
 
     return this.#users;
   }
