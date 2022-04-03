@@ -115,3 +115,11 @@ h3 {
 .person span {
 	margin-left: auto;
 }
+
+#wealth {
+	display: none;
+}
+
+#wealth.show {
+	display: block;
+}
